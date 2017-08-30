@@ -1,0 +1,4 @@
+.ant-tabs-tab-active{
+  background: red !important;
+  color: white !important;
+}
