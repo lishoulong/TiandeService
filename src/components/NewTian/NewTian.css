@@ -1,0 +1,50 @@
+.NewTianImg{
+  background: url('../img/servicebanner.jpg');
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.NewTianTab{
+  margin-top: -14%;
+  padding: 0 15% 20px 15%;
+  border-bottom: 1px solid #e8e8ec;
+}
+@media (max-width: 1280px) {
+  .NewTianTab{
+    margin-top: -14%;
+    padding: 0 8% 20px 8%;
+    border-bottom: 1px solid #e8e8ec;
+  }
+}
+.NewTianTab h3{
+  text-align: center;
+  padding: 20px 0;
+  color: #dc6b16;
+}
+.NewTianTab img{
+  height: 200px;
+  width: 200px;
+}
+.NewTianTab span{
+  padding: 0 30px;
+  overflow: hidden;
+  word-break: normal;
+  display: block;
+  white-space: pre-wrap;
+  overflow: hidden;
+}
+.ant-tabs-tab-active{
+    background-image: url('../img/arrayTab.png');
+    background-repeat: no-repeat;
+    background-position: 4% 47%;
+    color: white !important;
+    background-color: #ff5200;
+    background-size: 12px 12px;
+}
+.ant-tabs-vertical > .ant-tabs-bar .ant-tabs-ink-bar{
+    width: 0 !important;
+}
+.ant-tabs-vertical.ant-tabs-left > .ant-tabs-bar .ant-tabs-tab{
+    text-align: left !important;
+}

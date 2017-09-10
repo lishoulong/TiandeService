@@ -1,32 +1,32 @@
-.ServiceImg{
-    background: url('../img/servicebanner.jpg');
+.IndustryInfluImg{
+    background: url('../img/influencebanner.jpg');
     height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
-.ServiceTab{
+.IndustryInfluTab{
     margin-top: -14%;
     padding: 0 15% 20px 15%;
     border-bottom: 1px solid #e8e8ec;
 }
 @media (max-width: 1280px) {
-  .ServiceTab{
-      margin-top: -14%;
-      padding: 0 8% 20px 8%;
-      border-bottom: 1px solid #e8e8ec;
-  }
+    .IndustryInfluTab{
+        margin-top: -14%;
+        padding: 0 8% 20px 8%;
+        border-bottom: 1px solid #e8e8ec;
+    }
 }
-.ServiceTab h3{
+.IndustryInfluTab h3{
     text-align: center;
     padding: 20px 0;
-    color: #dc6b16;
+    color: black;
 }
-.ServiceTab img{
-    height: 200px;
-    width: 200px;
+.IndustryInfluTab img{
+    height: 100px;
+    width: 100px;
 }
-.ServiceTab span{
+.IndustryInfluTab span{
     padding: 0 30px;
     overflow: hidden;
     word-break: normal;
@@ -35,16 +35,16 @@
     overflow: hidden;
 }
 .ant-tabs-tab-active{
-  background-image: url('../img/arrayTab.png');
-  background-repeat: no-repeat;
-  background-position: 4% 47%;
-  color: white !important;
-  background-color: #ff5200;
-  background-size: 12px 12px;
+    background-image: url('../img/arrayTab.png');
+    background-repeat: no-repeat;
+    background-position: 4% 47%;
+    color: white !important;
+    background-color: #ff5200;
+    background-size: 12px 12px;
 }
 .ant-tabs-vertical.ant-tabs-left > .ant-tabs-bar .ant-tabs-tab{
-    text-align: left !important;
+   text-align: left !important;
 }
 .ant-tabs-vertical > .ant-tabs-bar .ant-tabs-ink-bar{
     width: 0 !important;
-}
+  }

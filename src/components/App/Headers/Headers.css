@@ -6,3 +6,65 @@
   background-color: white !important;
   color: black !important;
 } */
+.ant-layout-header {
+  padding: 0 15% !important;
+}
+@media (max-width: 1280px) {
+  .ant-layout-header {
+    padding: 0 8% !important;
+  }
+}
+.ant-menu-horizontal{
+    border: none !important;
+}
+/* .ant-menu-item{
+    padding-right: 26px !important;
+} */
+.headerList{
+  padding-top: 18px;
+}
+.headerList > span{
+    padding-right: 20px;
+    position: relative;
+    display: inline-block;
+}
+.headerList > span > img{
+    vertical-align: middle;
+    height: 20px;
+    padding-left: 18px;
+}
+.headerList > span > a{
+    vertical-align: middle;
+    position: relative;
+    display: inline-block;
+    color: black;
+}
+.headerList > span:last-child{
+    position: absolute;
+    right: 6%;
+}
+.classPlaceholder{
+    display: none;
+}
+.classPlaceholdershow{
+    display: inline-block;
+}
+.inputNoline{
+    display: inline-block;
+    border: none;
+    height: 22px;
+    margin-right: 14px;
+}
+.inputNolineinshow{
+    display: none;
+}
+.headerAditional span:first-child{
+    position: absolute;
+    left: 8%;
+    top: -12px;
+}
+.headerAditional span:last-child{
+    position: absolute;
+    right: 8%;
+    top: -12px;
+}

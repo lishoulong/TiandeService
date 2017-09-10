@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Tabs } from 'antd';
-import './Service.css';
+import './NewTian.css';
 
 const TabPane = Tabs.TabPane;
-class Service extends Component {
+class NewTian extends Component {
   constructor(props){
       super(props);
       this.tabEnv = this.tabEnv.bind(this);
@@ -23,14 +23,14 @@ class Service extends Component {
   }
   render() {
     return (
-      <div className="Service">
-          <div className="ServiceImg" />
-          <div className="ServiceTab">
+      <div className="NewTian">
+          <div className="NewTianImg" />
+          <div className="NewTianTab">
             <Tabs
                 defaultActiveKey="1"
                 tabPosition={'left'}
                 tabBarStyle={{background: '#ececec'}}
-                style={{background: 'white' ,height: 500}}
+                style={{background: 'white', height: 500}}
               >
                 <TabPane tab={<div>环境服务</div>} key="1">
                   <div>
@@ -75,4 +75,4 @@ class Service extends Component {
   }
 }
 
-export default Service;
+export default NewTian;
