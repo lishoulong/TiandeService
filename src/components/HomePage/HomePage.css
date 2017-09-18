@@ -16,7 +16,7 @@
     padding-bottom: 40px;
 }
 .HomePageTab{
-    width: 200px;
+    width: 164px;
     height: 200px;
     display: inline-block;
     background: white;
@@ -56,7 +56,7 @@
 }
 .HomePageChracter{
     padding: 0 15%;
-    background: #d6d6d6;
+    background: #f7f7f7;
     padding-bottom: 60px;
 }
 @media (max-width: 1280px) {

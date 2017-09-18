@@ -30,9 +30,9 @@ class Service extends Component {
                 defaultActiveKey="1"
                 tabPosition={'left'}
                 tabBarStyle={{background: '#ececec'}}
-                style={{background: 'white' ,height: 500}}
+                style={{background: 'white' ,height: 550}}
               >
-                <TabPane tab={<div>环境服务</div>} key="1">
+                <TabPane tab={<div><div>环境服务</div><div>medical service</div></div>} key="1">
                   <div>
                       <h3>环境服务</h3>
                       <span>专业的服务领导者，为全球医疗机构，教育结构，体育赛事提供设施管理服务。专业的服务领导者，为全球医疗机构，教育结构，体育赛事提供设施管理服务。</span>
@@ -54,7 +54,7 @@ class Service extends Component {
                         <span></span>
                     </div>
                 </TabPane>
-                <TabPane tab="Tab 3" key="3">
+                <TabPane tab={<div><div>设备运行维护</div><div>medical service</div></div>} key="3">
                     <div>
                         <h3>环境服务</h3>
                         <span></span>
@@ -64,11 +64,10 @@ class Service extends Component {
                         </div>
                         <span></span>
                     </div></TabPane>
-                <TabPane tab="Tab 4" key="4">Content of tab 4</TabPane>
-                <TabPane tab="Tab 5" key="5">Content of tab 5</TabPane>
-                <TabPane tab="Tab 6" key="6">Content of tab 6</TabPane>
-                <TabPane tab="Tab 7" key="7">Content of tab 7</TabPane>
-              </Tabs>
+                <TabPane tab={<div><div>司梯/导医</div><div>medical service</div></div>} key="4">Content of tab 4</TabPane>
+                <TabPane tab={<div><div>安保服务</div><div>medical service</div></div>} key="5">Content of tab 5</TabPane>
+                <TabPane tab={<div><div>客户服务中心</div><div>medical service</div></div>} key="6">Content of tab 6</TabPane>
+            </Tabs>
           </div>
       </div>
     );

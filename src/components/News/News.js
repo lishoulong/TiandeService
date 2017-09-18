@@ -35,7 +35,7 @@ render() {
                 defaultActiveKey="1"
                 tabPosition={'left'}
                 tabBarStyle={{background: '#ececec'}}
-                style={{background: 'white', height: 500}}
+                style={{background: 'white', height: 550}}
               >
                 <TabPane tab={<div><div>文章链接</div><div>medical service</div></div>} key="1">
                       {/* <div className="rightPart">

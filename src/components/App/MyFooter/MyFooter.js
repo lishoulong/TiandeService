@@ -37,7 +37,7 @@ export default class MyFooter extends React.Component {
                     </div>
                     <div className="allInfosRight"><img src={require("../../img/secondCode.png")} /></div>
                 </div>
-                <div className="banners">版权所有</div>
+                <div className="banners">版权所有 2010-2011 爱玛客服务产业（中国）有限公司保留一切权利   爱玛客医疗服务美国  爱玛客中国</div>
             </Footer>
         )
     }
