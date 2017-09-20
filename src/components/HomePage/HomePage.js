@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import { browserHistory } from 'react-router'
 import {imgs, iconNames} from '../../util';
 import {Icon} from 'antd'
 import ImgList from './ImgList/ImgList';
+import EventSystem from '../../EventSystem'
 import './HomePage.css';
 
 
@@ -9,8 +11,16 @@ class HomePage extends Component {
   constructor(props){
     super(props);
     this.imgs = imgs;
+    this.tabsPart = this.tabsPart.bind(this);
+    this.jumpPage = this.jumpPage.bind(this);
     this.state = {
-        blackMore: true
+        blackMore: true,
+        treeTab: false,
+        transformTab: false,
+        profixTab: false,
+        elabraterTab: false,
+        safeserviceTab: false,
+        centerTab: false
     }
   }
   tabsPart = () => {
@@ -19,9 +29,9 @@ class HomePage extends Component {
               <h3>服务范围</h3>
               <div className='HomePageTabsAll'>
                   {
-                    iconNames.map(function(iconName, index){
+                    iconNames.map((iconName, index) => {
                         return (
-                            <div key={index} className='HomePageTab'>
+                            <div key={index} className={'HomePageTab ' + (this.state[`${iconName.icon}Tab`] ? 'clickColor': '')} onClick={(e) => {this.jumpPage(e,iconName.icon)}}>
                                 <img src={require(`../img/${iconName.icon}.png`)} />
                                 <span className='homeMore'>more<Icon type="right" /></span>
                                 <span>{iconName.value}</span>
@@ -33,6 +43,25 @@ class HomePage extends Component {
               </div>
           </div>
       )
+  }
+  jumpPage = (event, iconName) => {
+      event.preventDefault();
+      iconNames.forEach((tempIcon, tempIndex) => {
+          let icon = tempIcon.icon;
+          if(icon == iconName){
+             return this.setState({
+                 [`${icon}Tab`]: true
+             })
+          }
+          this.setState({
+              [`${icon}Tab`]: false
+          })
+      })
+      EventSystem.publish('updateHeader', 'service');
+      browserHistory.push({
+        pathname: '/service',
+        state: { params: iconName}
+      })
   }
   changeMore = () => {
       this.setState({

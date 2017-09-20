@@ -6,7 +6,11 @@ const TabPane = Tabs.TabPane;
 class Service extends Component {
   constructor(props){
       super(props);
+      this.state = {
+          propsKey: ''
+      }
       this.tabEnv = this.tabEnv.bind(this);
+      this.onChange = this.onChange.bind(this);
   }
   tabEnv = () => {
     return
@@ -21,18 +25,31 @@ class Service extends Component {
       </div>
     )
   }
+  componentDidMount(){
+      let params = this.props.location.state.params;
+      console.log('params',params);
+      if(params){
+        this.setState({
+            propsKey: params
+        })
+      }
+  }
+  onChange = (activeKey) => {
+    this.setState({ propsKey: activeKey });
+  }
   render() {
     return (
       <div className="Service">
           <div className="ServiceImg" />
           <div className="ServiceTab">
             <Tabs
-                defaultActiveKey="1"
+                activeKey={this.state.propsKey}
+                onChange={this.onChange}
                 tabPosition={'left'}
                 tabBarStyle={{background: '#ececec'}}
                 style={{background: 'white' ,height: 550}}
               >
-                <TabPane tab={<div><div>环境服务</div><div>medical service</div></div>} key="1">
+                <TabPane tab={<div><div>环境服务</div><div>medical service</div></div>} key="tree">
                   <div>
                       <h3>环境服务</h3>
                       <span>专业的服务领导者，为全球医疗机构，教育结构，体育赛事提供设施管理服务。专业的服务领导者，为全球医疗机构，教育结构，体育赛事提供设施管理服务。</span>
@@ -43,7 +60,7 @@ class Service extends Component {
                       <span>专业的服务领导者，为全球医疗机构，教育结构，体育赛事提供设施管理服务。专业的服务领导者，为全球医疗机构，教育结构，体育赛事提供设施管理服务。专业的服务领导者，为全球医疗机构，教育结构，体育赛事提供设施管理服务。专业的服务领导者，为全球医疗机构，教育结构，体育赛事提供设施管理服务。专业的服务领导者，为全球医疗机构，教育结构，体育赛事提供设施管理服务。专业的服务领导者，为全球医疗机构，教育结构，体育赛事提供设施管理服务。专业的服务领导者，为全球医疗机构，教育结构，体育赛事提供设施管理服务。专业的服务领导者，为全球医疗机构，教育结构，体育赛事提供设施管理服务。</span>
                   </div>
                 </TabPane>
-                <TabPane tab={<div><div>中央运送</div><div>medical service</div></div>} key="2">
+                <TabPane tab={<div><div>中央运送</div><div>medical service</div></div>} key="transform">
                     <div>
                         <h3>环境服务</h3>
                         <span></span>
@@ -54,7 +71,7 @@ class Service extends Component {
                         <span></span>
                     </div>
                 </TabPane>
-                <TabPane tab={<div><div>设备运行维护</div><div>medical service</div></div>} key="3">
+                <TabPane tab={<div><div>设备运行维护</div><div>medical service</div></div>} key="profix">
                     <div>
                         <h3>环境服务</h3>
                         <span></span>
@@ -64,9 +81,9 @@ class Service extends Component {
                         </div>
                         <span></span>
                     </div></TabPane>
-                <TabPane tab={<div><div>司梯/导医</div><div>medical service</div></div>} key="4">Content of tab 4</TabPane>
-                <TabPane tab={<div><div>安保服务</div><div>medical service</div></div>} key="5">Content of tab 5</TabPane>
-                <TabPane tab={<div><div>客户服务中心</div><div>medical service</div></div>} key="6">Content of tab 6</TabPane>
+                <TabPane tab={<div><div>司梯/导医</div><div>medical service</div></div>} key="elabrater">Content of tab 4</TabPane>
+                <TabPane tab={<div><div>安保服务</div><div>medical service</div></div>} key="safeservice">Content of tab 5</TabPane>
+                <TabPane tab={<div><div>客户服务中心</div><div>medical service</div></div>} key="center">Content of tab 6</TabPane>
             </Tabs>
           </div>
       </div>

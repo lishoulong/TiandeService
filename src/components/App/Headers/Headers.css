@@ -21,7 +21,7 @@
     padding-right: 26px !important;
 } */
 .headerList{
-  padding-top: 18px;
+  padding-top: 36px;
 }
 .headerList > span{
     padding-right: 20px;
@@ -43,20 +43,11 @@
     position: absolute;
     right: 6%;
 }
-.classPlaceholder{
-    display: none;
-}
-.classPlaceholdershow{
-    display: inline-block;
-}
 .inputNoline{
     display: inline-block;
     border: none;
     height: 22px;
     margin-right: 14px;
-}
-.inputNolineinshow{
-    display: none;
 }
 .headerAditional span:first-child{
     position: absolute;

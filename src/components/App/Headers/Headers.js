@@ -1,6 +1,7 @@
 import React from 'react';
 import { browserHistory } from 'react-router'
 import {Button,Menu, Icon,Input, Layout, Dropdown} from 'antd'
+import EventSystem from '../../../EventSystem'
 
 const { Header } = Layout;
 require('./Headers.css');
@@ -9,19 +10,32 @@ export default class Headers extends React.Component {
         super(props)
         this.state = {
             active: 'null',
-            showPlaceholder: true
+            showRedline: false
         }
         this.gotoUrl = this.gotoUrl.bind(this);
         this.myColor = this.myColor.bind(this);
+        this.updateHeader = this.updateHeader.bind(this);
+    }
+    componentDidMount() {
+        EventSystem.subscribe('updateHeader', this.updateHeader);
+    }
+    updateHeader(type){
+        let pos;
+        switch(type){
+            case 'service':
+                pos = 2;
+                break
+            default:
+                console.log('not service');
+        }
+        this.setState({active : pos})
     }
     gotoUrl(url, position){
-        console.log('gotuurl', url, position);
         if (this.state.active === position) {
             this.setState({active : null})
         } else {
             this.setState({active : position})
         }
-        console.log('gotuurl1', url, position);
         browserHistory.push(url);
     }
     myColor(position) {
@@ -32,14 +46,12 @@ export default class Headers extends React.Component {
     }
     toggleInput(){
         this.setState({
-            showPlaceholder: !this.state.showPlaceholder
+            showRedline: true
         })
     }
     render(){
-        const placeToggle = !this.state.showPlaceholder ? 'classPlaceholder' : 'classPlaceholdershow';
-        const inputToggle = this.state.showPlaceholder ? 'inputNolineinshow' : 'inputNoline';
         return (
-            <Header style={{background: '#ffffff',height: '78px'}}>
+            <Header style={{background: '#ffffff',height: '110px'}}>
                 <div className="headerAditional">
                     <span>English</span>
                     <span>联系我们: 0412-38947632 010-12348764</span>
@@ -70,9 +82,12 @@ export default class Headers extends React.Component {
                     </span>
                     <span style={{ marginLeft: '36%' }}>
                         <a>
-                            <span className={placeToggle} style={{paddingRight: 14}}>如何能享受优质的服务</span>
-                            <input className={inputToggle} />
-                            <img style={{verticalAlign: 'middle'}} src={require('../../img/redline.png')}/>
+                            <input className='inputNoline' />
+                            {
+                                this.state.showRedline?
+                                <img style={{verticalAlign: 'middle'}} src={require('../../img/redline.png')}/>:
+                                null
+                            }
                             <img style={{width: 15, height: 15,verticalAlign: 'middle', marginLeft: 130}} onClick={() => this.toggleInput()} src={require("../../img/search.png")}/>
                         </a>
                     </span>
