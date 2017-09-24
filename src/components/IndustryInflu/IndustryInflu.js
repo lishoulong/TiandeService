@@ -30,9 +30,8 @@ class IndustryInflu extends Component {
                 defaultActiveKey="1"
                 tabPosition={'left'}
                 tabBarStyle={{background: '#ececec'}}
-                style={{background: 'white', height: 550}}
               >
-                <TabPane tab={<div><div>协会会员单位</div><div>Member unit</div></div>} key="1">
+                <TabPane tab={<div><span>协会会员单位</span><span>Member unit</span></div>} key="1">
                   <div>
                       <h3>协会会员单位</h3>
                       <div>

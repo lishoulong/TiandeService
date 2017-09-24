@@ -23,6 +23,12 @@
 .headerList{
   padding-top: 36px;
 }
+.headerList .logoImg{
+    width: 139px;
+    height: 48px;
+    vertical-align: middle;
+    margin-left: -6px;
+}
 .headerList > span{
     padding-right: 20px;
     position: relative;
@@ -38,6 +44,9 @@
     position: relative;
     display: inline-block;
     color: black;
+}
+.headerList > span:nth-child(2){
+    padding-left: 70px;
 }
 .headerList > span:last-child{
     position: absolute;
@@ -58,4 +67,39 @@
     position: absolute;
     right: 8%;
     top: -12px;
+}
+@media (max-width: 736px) {
+    .headerList .logoImg{
+        width: 70px;
+        vertical-align: middle;
+    }
+    .headerList > span{
+        padding-right: 0;
+        position: relative;
+        display: inline-block;
+    }
+    .headerList > span > img{
+        vertical-align: middle;
+        height: 28px;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+    .headerList > span > a{
+        vertical-align: middle;
+        position: relative;
+        display: inline-block;
+        color: black;
+    }
+    .headerList > span:nth-child(1){
+        margin-right: 25px;
+    }
+    .headerList > span:nth-child(2){
+        padding-left: 0;
+    }
+    .headerList > span:last-child{
+        display: none
+    }
+    .headerAditional span:first-child {
+        left: 8%;
+    }
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import { browserHistory } from 'react-router'
 import {Button,Menu, Icon,Input, Layout, Dropdown} from 'antd'
 import EventSystem from '../../../EventSystem'
+import {headerList} from '../../../util';
 
 const { Header } = Layout;
 require('./Headers.css');
@@ -15,6 +16,8 @@ export default class Headers extends React.Component {
         this.gotoUrl = this.gotoUrl.bind(this);
         this.myColor = this.myColor.bind(this);
         this.updateHeader = this.updateHeader.bind(this);
+        this.setActive = this.setActive.bind(this);
+        this.onMouseOverHandler = this.onMouseOverHandler.bind(this);
     }
     componentDidMount() {
         EventSystem.subscribe('updateHeader', this.updateHeader);
@@ -31,11 +34,7 @@ export default class Headers extends React.Component {
         this.setState({active : pos})
     }
     gotoUrl(url, position){
-        if (this.state.active === position) {
-            this.setState({active : null})
-        } else {
-            this.setState({active : position})
-        }
+        this.setActive(position);
         browserHistory.push(url);
     }
     myColor(position) {
@@ -49,6 +48,20 @@ export default class Headers extends React.Component {
             showRedline: true
         })
     }
+    setActive(position){
+        console.log('setActive',position)
+        if (this.state.active === position) {
+            this.setState({active : null})
+        } else {
+            this.setState({active : position})
+        }
+    }
+    onMouseOverHandler(position){
+        // this.setActive(position);
+    }
+    onMouseOutHandler(){
+        console.log('onMouseOutHandler')
+    }
     render(){
         return (
             <Header style={{background: '#ffffff',height: '110px'}}>
@@ -59,36 +72,37 @@ export default class Headers extends React.Component {
                 <div className="headerList">
                     <span style={{paddingLeft: 0}}>
                         <span style={{color: this.myColor(0)}} onClick={() => this.gotoUrl('/',0)}>
-                        <img style={{width: 139, height: 48,verticalAlign: 'middle',marginLeft: -6}} src={require("../../img/logo.png")}/></span>
+                        <img className='logoImg' src={require("../../img/logo.png")}/></span>
                     </span>
-                    <span style={{paddingLeft: 70}}>
-                        <span style={{color: this.myColor(0)}} onClick={() => this.gotoUrl('/', 0)}>首页</span>
-                        <img src={require('../../img/straitline.png')}/>
-                    </span>
-                    <span>
-                        <span style={{color: this.myColor(1)}} onClick={() => this.gotoUrl('/newTian', 1)}>新天德</span>
-                        <img src={require('../../img/straitline.png')}/>
-                    </span>
-                    <span>
-                        <span style={{color: this.myColor(2)}} onClick={() => this.gotoUrl('/service', 2)}>服务</span>
-                        <img src={require('../../img/straitline.png')}/>
-                    </span>
-                    <span>
-                        <span style={{color: this.myColor(3)}} onClick={() => this.gotoUrl('/influence', 3)}>行业影响</span>
-                        <img src={require('../../img/straitline.png')}/>
-                    </span>
-                    <span>
-                        <span style={{color: this.myColor(4)}} onClick={() => this.gotoUrl('/news', 4)}>新闻资讯</span>
-                    </span>
+                    {
+                        headerList.map((headerItem, index) => {
+                            let {title, url, useLine} = headerItem;
+                            return (
+                                <span 
+                                    onMouseOver = {() => this.onMouseOverHandler(index)}
+                                    onMouseOut = {this.onMouseOutHandler}
+                                    onClick={() => this.gotoUrl(url, index)}
+                                    key = {index}
+                                >
+                                    <span style={{color: this.myColor(index)}}>{title}</span>
+                                    {
+                                        useLine?
+                                        <img src={require('../../img/straitline.png')}/>:
+                                        null
+                                    }
+                                </span>
+                            )
+                        })
+                    }
                     <span style={{ marginLeft: '36%' }}>
                         <a>
-                            <input className='inputNoline' />
                             {
                                 this.state.showRedline?
                                 <img style={{verticalAlign: 'middle'}} src={require('../../img/redline.png')}/>:
                                 null
                             }
-                            <img style={{width: 15, height: 15,verticalAlign: 'middle', marginLeft: 130}} onClick={() => this.toggleInput()} src={require("../../img/search.png")}/>
+                            <input className='inputNoline' />
+                            <img style={{width: 15, height: 15,verticalAlign: 'middle', marginLeft: 10}} onClick={() => this.toggleInput()} src={require("../../img/search.png")}/>
                         </a>
                     </span>
                 </div>

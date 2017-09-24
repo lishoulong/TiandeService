@@ -1,4 +1,8 @@
 @import '~antd/dist/antd.css';
+body, html{
+    height: 98%;
+    padding: 0;
+ }
 .ant-layout{
     background: white;
 }

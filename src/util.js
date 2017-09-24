@@ -55,3 +55,31 @@ export const newsList = [
     more: '查看更多'
   }
 ]
+
+export const headerList = [
+  {
+    title: '首页',
+    url: '/',
+    useLine: true
+  },
+  {
+    title: '新天德',
+    url: '/newTian',
+    useLine: true
+  },
+  {
+    title: '服务',
+    url: '/service',
+    useLine: true
+  },
+  {
+    title: '行业影响',
+    url: '/influence',
+    useLine: true
+  },
+  {
+    title: '新闻资讯',
+    url: '/news',
+    useLine: false
+  }
+]

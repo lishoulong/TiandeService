@@ -42,3 +42,10 @@
 .ant-layout-footer{
     padding: 0 !important;
 }
+@media (max-width: 736px) {
+    .allInfosRight{
+        -webkit-transform: translateY(50%);
+        -ms-transform: translateY(50%);
+        transform: translateY(50%);
+    }
+}

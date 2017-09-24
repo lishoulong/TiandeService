@@ -27,24 +27,70 @@
     width: 200px;
 }
 .ServiceTab span{
-    padding: 0 30px;
     overflow: hidden;
     word-break: normal;
     display: block;
     white-space: pre-wrap;
     overflow: hidden;
 }
+.ant-tabs{
+    background: rgb(236, 236, 236);
+    border-left: 1px solid #f7f7f7;
+    border-right: 1px solid #f7f7f7;
+    border-bottom: 1px solid #f7f7f7;
+}
 .ant-tabs-tab-active{
   background-image: url('../img/arrayTab.png');
   background-repeat: no-repeat;
   background-position: 4% 47%;
   color: white !important;
-  background-color: #ff5200;
+  background-color: #ff5a00;
   background-size: 12px 12px;
+  padding-left: 28px !important;
+}
+
+.ant-tabs-vertical.ant-tabs-left > .ant-tabs-content {
+    background: white;
+    height: 600px;
+}
+.ant-tabs-vertical > .ant-tabs-bar .ant-tabs-tab{
+    margin-bottom: 0;
+    padding: 15px 24px;
 }
 .ant-tabs-vertical.ant-tabs-left > .ant-tabs-bar .ant-tabs-tab{
     text-align: left !important;
 }
 .ant-tabs-vertical > .ant-tabs-bar .ant-tabs-ink-bar{
     width: 0 !important;
+}
+.ant-tabs-vertical > .ant-tabs-bar{
+    height: 100%;
+}
+@media (max-width: 736px) {
+    .ServiceImg{
+        height: 160px;
+    }
+    .ant-tabs-vertical.ant-tabs-left > .ant-tabs-bar{
+        width: 24%;
+    }
+    .ant-tabs-vertical > .ant-tabs-bar .ant-tabs-nav{
+        font-size: 11px;
+    }
+    .ant-tabs-vertical > .ant-tabs-bar .ant-tabs-tab{
+        margin-bottom: 0;
+        padding: 8px 4px 8px 12px;
+    }
+    .ant-tabs-tab-active{
+        padding-left: 16px !important;
+    }
+    .ServiceTab img{
+        height: 60px;
+        width: 60px;
+    }
+    .ant-tabs-vertical.ant-tabs-left > .ant-tabs-content {
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 400px;
+        overflow: auto;
+    }
 }

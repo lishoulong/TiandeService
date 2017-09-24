@@ -20,14 +20,13 @@
 .NewTianTab h3{
   text-align: center;
   padding: 20px 0;
-  color: #dc6b16;
+  color: #ff5a00;
 }
 .NewTianTab img{
   height: 200px;
   width: 200px;
 }
 .NewTianTab span{
-  padding: 0 30px;
   overflow: hidden;
   word-break: normal;
   display: block;
@@ -39,7 +38,7 @@
     background-repeat: no-repeat;
     background-position: 4% 47%;
     color: white !important;
-    background-color: #ff5200;
+    background-color: #ff5a00;
     background-size: 12px 12px;
 }
 .ant-tabs-vertical > .ant-tabs-bar .ant-tabs-ink-bar{
@@ -47,4 +46,16 @@
 }
 .ant-tabs-vertical.ant-tabs-left > .ant-tabs-bar .ant-tabs-tab{
     text-align: left !important;
+}
+.boldTian{
+    font-weight: bold;
+}
+@media (max-width: 736px) {
+  .NewTianImg{
+      height: 160px;
+  }
+  .NewTianTab img{
+      height: 60px;
+      width: 60px;
+  }
 }

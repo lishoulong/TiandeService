@@ -11,3 +11,14 @@
 .carousel .control-dots .dot{
     background: #ff6c2e !important;
 }
+@media (max-width: 736px) {
+    .carousel .control-dots {
+        left: 92% !important;
+    }
+    .carousel .slider {
+        height: 124px !important;
+    }
+    .carousel .slide img {
+        height: 124px;
+    }
+}

@@ -27,7 +27,6 @@
     width: 100px;
 }
 .IndustryInfluTab span{
-    padding: 0 30px;
     overflow: hidden;
     word-break: normal;
     display: block;
@@ -39,7 +38,7 @@
     background-repeat: no-repeat;
     background-position: 4% 47%;
     color: white !important;
-    background-color: #ff5200;
+    background-color: #ff5a00;
     background-size: 12px 12px;
 }
 .ant-tabs-vertical.ant-tabs-left > .ant-tabs-bar .ant-tabs-tab{
@@ -47,4 +46,16 @@
 }
 .ant-tabs-vertical > .ant-tabs-bar .ant-tabs-ink-bar{
     width: 0 !important;
-  }
+}
+@media (max-width: 736px) {
+    .IndustryInfluImg{
+        height: 160px;
+    }
+    .IndustryInfluTab img{
+        height: 60px;
+        width: 60px;
+    }
+    .IndustryInfluTab h3 {
+        padding: 10px 0;
+    }
+}
