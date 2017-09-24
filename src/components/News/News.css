@@ -51,11 +51,12 @@
   text-align: left !important;
 }
 .rightPart{
-    padding: 20px 0 30px 30px;
+    padding: 20px 0 30px 56px;
     border-bottom: 1px solid #e8e1e1;
 }
 .rightPart span:nth-child(2){
     float: right;
+    margin-right: 20px;
 }
 .rightParttree{
     background:  url('../img/tree.png');
@@ -100,4 +101,7 @@
   .rightPart {
       padding: 20px 0 30px 42px;
   } 
+  .rightPart span:nth-child(2){
+    margin-right: 4px;
+}
 }
