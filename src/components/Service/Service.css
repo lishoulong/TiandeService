@@ -88,9 +88,12 @@
         width: 60px;
     }
     .ant-tabs-vertical.ant-tabs-left > .ant-tabs-content {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 13px;
+        padding-right: 13px;
         height: 400px;
         overflow: auto;
+    }
+    .enService{
+        font-size: 8px;
     }
 }

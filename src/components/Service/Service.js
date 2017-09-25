@@ -48,7 +48,7 @@ class Service extends Component {
                 tabPosition={'left'}
                 tabBarStyle={{background: '#ececec'}}
               >
-                <TabPane tab={<div><div>环境服务</div><span>medical service</span></div>} key="tree">
+                <TabPane tab={<div><div>环境服务</div><span className="enService">medical service</span></div>} key="tree">
                   <div>
                       <h3>环境服务</h3>
                       <span>专业的服务领导者，为全球医疗机构，教育结构，体育赛事提供设施管理服务。专业的服务领导者，为全球医疗机构，教育结构，体育赛事提供设施管理服务。</span>
@@ -59,7 +59,7 @@ class Service extends Component {
                       <span>专业的服务领导者，为全球医疗机构，教育结构，体育赛事提供设施管理服务。专业的服务领导者，为全球医疗机构，教育结构，体育赛事提供设施管理服务。专业的服务领导者，为全球医疗机构，教育结构，体育赛事提供设施管理服务。专业的服务领导者，为全球医疗机构，教育结构，体育赛事提供设施管理服务。专业的服务领导者，为全球医疗机构，教育结构，体育赛事提供设施管理服务。专业的服务领导者，为全球医疗机构，教育结构，体育赛事提供设施管理服务。专业的服务领导者，为全球医疗机构，教育结构，体育赛事提供设施管理服务。专业的服务领导者，为全球医疗机构，教育结构，体育赛事提供设施管理服务。</span>
                   </div>
                 </TabPane>
-                <TabPane tab={<div><div>中央运送</div><span>medical service</span></div>} key="transform">
+                <TabPane tab={<div><div>中央运送</div><span className="enService">medical service</span></div>} key="transform">
                     <div>
                         <h3>环境服务</h3>
                         <span></span>
@@ -70,7 +70,7 @@ class Service extends Component {
                         <span></span>
                     </div>
                 </TabPane>
-                <TabPane tab={<div><div>设备运行维护</div><span>medical service</span></div>} key="profix">
+                <TabPane tab={<div><div>设备运行维护</div><span className="enService">medical service</span></div>} key="profix">
                     <div>
                         <h3>环境服务</h3>
                         <span></span>
@@ -80,9 +80,9 @@ class Service extends Component {
                         </div>
                         <span></span>
                     </div></TabPane>
-                <TabPane tab={<div><div>司梯/导医</div><span>medical service</span></div>} key="elabrater">Content of tab 4</TabPane>
-                <TabPane tab={<div><div>安保服务</div><span>medical service</span></div>} key="safeservice">Content of tab 5</TabPane>
-                <TabPane tab={<div><div>客户服务中心</div><span>medical service</span></div>} key="center">Content of tab 6</TabPane>
+                <TabPane tab={<div><div>司梯/导医</div><span className="enService">medical service</span></div>} key="elabrater">Content of tab 4</TabPane>
+                <TabPane tab={<div><div>安保服务</div><span className="enService">medical service</span></div>} key="safeservice">Content of tab 5</TabPane>
+                <TabPane tab={<div><div>客户服务中心</div><span className="enService">medical service</span></div>} key="center">Content of tab 6</TabPane>
             </Tabs>
           </div>
       </div>

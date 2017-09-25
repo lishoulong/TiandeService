@@ -48,4 +48,17 @@
         -ms-transform: translateY(50%);
         transform: translateY(50%);
     }
+    .allInfosLeft span:nth-child(1){
+        display: inline-block;
+        position: relative;
+        float: left;
+    }
+    .allInfos{
+        padding: 0 8%;
+        margin: 12px 0;
+    }
+    .banners{
+        padding: 20px 20%;
+        font-size: 10px;
+    }
 }

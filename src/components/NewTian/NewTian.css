@@ -40,12 +40,14 @@
     color: white !important;
     background-color: #ff5a00;
     background-size: 12px 12px;
+    border-bottom: none;
 }
 .ant-tabs-vertical > .ant-tabs-bar .ant-tabs-ink-bar{
     width: 0 !important;
 }
 .ant-tabs-vertical.ant-tabs-left > .ant-tabs-bar .ant-tabs-tab{
     text-align: left !important;
+    border-bottom: 1px dotted #e0dcdc;
 }
 .boldTian{
     font-weight: bold;
@@ -57,5 +59,12 @@
   .NewTianTab img{
       height: 60px;
       width: 60px;
+  }
+  .enBoldtian{
+      font-size: 8px;
+  }
+  .ant-tabs-tab-active{
+      background-size: 10px 10px;
+      background-position: 4% 31%;
   }
 }

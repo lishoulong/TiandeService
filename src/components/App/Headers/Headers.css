@@ -24,8 +24,8 @@
   padding-top: 36px;
 }
 .headerList .logoImg{
-    width: 139px;
-    height: 48px;
+    width: 98px;
+    height: 35px;
     vertical-align: middle;
     margin-left: -6px;
 }
@@ -70,8 +70,9 @@
 }
 @media (max-width: 736px) {
     .headerList .logoImg{
-        width: 70px;
+        width: 119px;
         vertical-align: middle;
+        height: 41px;
     }
     .headerList > span{
         padding-right: 0;
@@ -81,8 +82,8 @@
     .headerList > span > img{
         vertical-align: middle;
         height: 28px;
-        padding-left: 6px;
-        padding-right: 6px;
+        padding-left: 3px;
+        padding-right: 3px;
     }
     .headerList > span > a{
         vertical-align: middle;
@@ -91,7 +92,7 @@
         color: black;
     }
     .headerList > span:nth-child(1){
-        margin-right: 25px;
+        margin-right: 10px;
     }
     .headerList > span:nth-child(2){
         padding-left: 0;

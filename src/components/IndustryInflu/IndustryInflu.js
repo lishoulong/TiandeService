@@ -31,7 +31,7 @@ class IndustryInflu extends Component {
                 tabPosition={'left'}
                 tabBarStyle={{background: '#ececec'}}
               >
-                <TabPane tab={<div><span>协会会员单位</span><span>Member unit</span></div>} key="1">
+                <TabPane tab={<div><span>协会会员</span><span className="enIndustry">Member unit</span></div>} key="1">
                   <div>
                       <h3>协会会员单位</h3>
                       <div>

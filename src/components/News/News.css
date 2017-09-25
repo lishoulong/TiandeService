@@ -102,6 +102,9 @@
       padding: 20px 0 30px 42px;
   } 
   .rightPart span:nth-child(2){
-    margin-right: 4px;
-}
+      margin-right: 4px;
+  }
+  .enNews{
+      font-size: 8px;
+  }
 }

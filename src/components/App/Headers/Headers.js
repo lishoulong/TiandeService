@@ -67,7 +67,7 @@ export default class Headers extends React.Component {
             <Header style={{background: '#ffffff',height: '110px'}}>
                 <div className="headerAditional">
                     <span>English</span>
-                    <span>联系我们: 0412-38947632 010-12348764</span>
+                    <span>联系我们: 0412-38947632 &nbsp;&nbsp; 010-12348764</span>
                 </div>
                 <div className="headerList">
                     <span style={{paddingLeft: 0}}>
