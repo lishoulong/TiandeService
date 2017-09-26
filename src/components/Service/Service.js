@@ -70,7 +70,7 @@ class Service extends Component {
                         <span></span>
                     </div>
                 </TabPane>
-                <TabPane tab={<div><div>设备运行维护</div><span className="enService">medical service</span></div>} key="profix">
+                <TabPane tab={<div><div>设备运行</div><span className="enService">medical service</span></div>} key="profix">
                     <div>
                         <h3>环境服务</h3>
                         <span></span>
@@ -82,7 +82,7 @@ class Service extends Component {
                     </div></TabPane>
                 <TabPane tab={<div><div>司梯/导医</div><span className="enService">medical service</span></div>} key="elabrater">Content of tab 4</TabPane>
                 <TabPane tab={<div><div>安保服务</div><span className="enService">medical service</span></div>} key="safeservice">Content of tab 5</TabPane>
-                <TabPane tab={<div><div>客户服务中心</div><span className="enService">medical service</span></div>} key="center">Content of tab 6</TabPane>
+                <TabPane tab={<div><div>客户服务</div><span className="enService">medical service</span></div>} key="center">Content of tab 6</TabPane>
             </Tabs>
           </div>
       </div>
