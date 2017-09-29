@@ -20,7 +20,7 @@
 .ServiceTab h3{
     text-align: center;
     padding: 20px 0;
-    color: #dc6b16;
+    color: #ff5a00;
 }
 .ServiceTab img{
     height: 200px;
@@ -42,7 +42,7 @@
 .ant-tabs-tab-active{
   background-image: url('../img/arrayTab.png');
   background-repeat: no-repeat;
-  background-position: 4% 47%;
+  background-position: 4% 32%;
   color: white !important;
   background-color: #ff5a00;
   background-size: 12px 12px;
@@ -68,7 +68,7 @@
 }
 @media (max-width: 736px) {
     .ServiceImg{
-        height: 160px;
+        height: 146px;
     }
     .ant-tabs-vertical.ant-tabs-left > .ant-tabs-bar{
         width: 24%;
@@ -92,6 +92,7 @@
         padding-right: 13px;
         height: 400px;
         overflow: auto;
+        font-size: 8px;
     }
     .enService{
         font-size: 7px;

@@ -36,7 +36,7 @@
 .ant-tabs-tab-active{
     background-image: url('../img/arrayTab.png');
     background-repeat: no-repeat;
-    background-position: 4% 47%;
+    background-position: 4% 32%;
     color: white !important;
     background-color: #ff5a00;
     background-size: 12px 12px;
@@ -54,7 +54,7 @@
 }
 @media (max-width: 736px) {
   .NewTianImg{
-      height: 160px;
+      height: 146px;
   }
   .NewTianTab img{
       height: 60px;

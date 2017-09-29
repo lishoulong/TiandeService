@@ -39,7 +39,7 @@
 .ant-tabs-tab-active{
   background-image: url('../img/arrayTab.png');
   background-repeat: no-repeat;
-  background-position: 4% 47%;
+  background-position: 4% 32%;
   color: white !important;
   background-color: #ff5a00;
   background-size: 12px 12px;
@@ -52,51 +52,55 @@
 }
 .rightPart{
     padding: 20px 0 30px 56px;
-    border-bottom: 1px solid #e8e1e1;
+    border-bottom: 1px solid #f5f5f5;
 }
 .rightPart span:nth-child(2){
     float: right;
     margin-right: 20px;
 }
 .rightParttree{
-    background:  url('../img/tree.png');
+    background:  url('../img/calander.png');
     background-repeat: no-repeat;
     background-position-y: 36%;
 }
 .rightPartprofix{
-  background:  url('../img/profix.png');
+  background:  url('../img/calander.png');
   background-repeat: no-repeat;
   background-position-y: 36%;
 }
 .rightParttransform{
-  background:  url('../img/transform.png');
+  background:  url('../img/calander.png');
   background-repeat: no-repeat;
   background-position-y: 36%;
 }
 .rightPartelabrater{
-  background:  url('../img/elabrater.png');
+  background:  url('../img/calander.png');
   background-repeat: no-repeat;
   background-position-y: 36%;
 }
+.lookMore{
+    padding-top: 6px;
+    font-size: 10px;
+}
 @media (max-width: 736px) {
   .NewsImg{
-      height: 160px;
+      height: 146px;
   }
   .NewsTab img{
       height: 60px;
       width: 60px;
   }
   .rightParttree {
-    background-size: 40px 40px;
+    background-size: 31px 33px;
   }
   .rightParttransform {
-    background-size: 40px 40px;
+    background-size: 31px 33px;
   }
   .rightPartprofix {
-    background-size: 40px 40px;
+    background-size: 31px 33px;
   }
   .rightPartelabrater {
-    background-size: 40px 40px;
+    background-size: 31px 33px;
   }
   .rightPart {
       padding: 20px 0 30px 42px;
@@ -106,5 +110,10 @@
   }
   .enNews{
       font-size: 8px;
+  }
+  .lookMore{
+      padding-top: 6px;
+      font-size: 10px;
+      color: blue;
   }
 }

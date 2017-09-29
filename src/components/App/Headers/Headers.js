@@ -39,7 +39,7 @@ export default class Headers extends React.Component {
     }
     myColor(position) {
         if (this.state.active === position) {
-            return "red";
+            return "#ff5a00";
         }
         return "";
     }

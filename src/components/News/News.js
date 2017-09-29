@@ -18,7 +18,7 @@ class News extends Component {
                 return (
                     <div key={index} className={cssClasses}>
                       <span>{news.value}</span>
-                      <span>{news.more}</span>
+                      <span className="lookMore">{news.more}</span>
                     </div>
                 )
             })
