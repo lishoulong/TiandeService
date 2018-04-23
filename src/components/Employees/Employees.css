@@ -1,0 +1,72 @@
+.EmployeesImg{
+  background: url('../img/employee.jpg');
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.EmployeesTab{
+  margin-top: -14%;
+  padding: 0 15% 20px 15%;
+  border-bottom: 1px solid #e8e8ec;
+}
+@media (max-width: 1280px) {
+  .EmployeesTab{
+    margin-top: -14%;
+    padding: 0 8% 20px 8%;
+    border-bottom: 1px solid #e8e8ec;
+  }
+}
+.EmployeesTab h3{
+  text-align: center;
+  padding: 20px 0;
+  color: #ff5a00;
+}
+.EmployeesTab img{
+  height: 200px;
+  width: 200px;
+}
+.EmployeesTab span{
+  overflow: hidden;
+  word-break: normal;
+  display: block;
+  white-space: pre-wrap;
+  overflow: hidden;
+}
+.ant-tabs-tab-active{
+    background-image: url('../img/arrayTab.png');
+    background-repeat: no-repeat;
+    background-position: 4% 32%;
+    color: white !important;
+    background-color: #ff5a00;
+    background-size: 12px 12px;
+    border-bottom: none;
+}
+.ant-tabs-vertical > .ant-tabs-bar .ant-tabs-ink-bar{
+    width: 0 !important;
+}
+.ant-tabs-vertical.ant-tabs-left > .ant-tabs-bar .ant-tabs-tab{
+    text-align: left !important;
+    border-bottom: 1px dotted #e0dcdc;
+}
+.boldTian{
+    font-weight: bold;
+}
+@media (max-width: 736px) {
+  .EmployeesImg{
+      height: 146px;
+  }
+  .EmployeesTab img{
+      height: 60px;
+      width: 44%;
+      margin-right: 10px;
+      margin-bottom: 20px;
+  }
+  .enBoldtian{
+      font-size: 8px;
+  }
+  .ant-tabs-tab-active{
+      background-size: 10px 10px;
+      background-position: 4% 31%;
+  }
+}

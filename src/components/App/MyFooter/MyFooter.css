@@ -48,10 +48,16 @@
         -ms-transform: translateY(50%);
         transform: translateY(50%);
     }
+    .allInfosLeft > div {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 0;
+    }
     .allInfosLeft span:nth-child(1){
         display: inline-block;
         position: relative;
         float: left;
+        height: 23px;
     }
     .allInfos{
         padding: 0 8%;

@@ -20,24 +20,24 @@ export default class MyFooter extends React.Component {
                     <div className="allInfosLeft">
                         <div>
                             <span><img src={require("../../img/location.png")} /></span>
-                            <span>爱玛克中国地址：中国朝阳区东三</span>
+                            <span>中国地址：北京市花市东大街花市枣苑3号楼2104</span>
                         </div>
                         <div>
                             <span><img src={require("../../img/sendmail.png")} /></span>
-                            <span>爱玛克中国地址：中国朝阳区东三</span>
+                            <span>邮编：000010</span>
                         </div>
                         <div>
                             <span><img src={require("../../img/tel.png")} /></span>
-                            <span>爱玛克中国地址：中国朝阳区东三</span>
+                            <span>电话：010-64740806 传真：010-64740807</span>
                         </div>
                         <div>
                             <span><img src={require("../../img/mail.png")} /></span>
-                            <span>爱玛克中国地址：中国朝阳区东三</span>
+                            <span>邮箱：leon.li@tiandehc.com</span>
                         </div>
                     </div>
                     <div className="allInfosRight"><img src={require("../../img/secondCode.png")} /></div>
                 </div>
-                <div className="banners">版权所有 2010-2011 爱玛客服务产业（中国）有限公司保留一切权利   爱玛客医疗服务美国  爱玛客中国</div>
+                <div className="banners">版权所有 2010-2011 新天德物业服务有限公司保留一切权利</div>
             </Footer>
         )
     }

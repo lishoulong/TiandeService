@@ -4,54 +4,39 @@ export const imgs = [];
 export const iconNames = [
   {
     icon: 'tree',
-    value: '环境服务',
-    enValue: "Environmental services"
+    value: '环境保洁',
+    enValue: "Environmental Service(EVS)"
   },
   {
     icon: 'transform',
     value: '中央运送',
-    enValue: "Environmental services"
+    enValue: "Central Transportation Services(CTS)"
   },
   {
     icon: 'profix',
     value: '工程运行维修',
-    enValue: "Environmental services"
+    enValue: "Facility Operations Maintenance(FOM)"
   },
   {
     icon: 'elabrater',
     value: '司梯/导医服务',
-    enValue: "Environmental services"
+    enValue: "Elevator & Lobby Hostess Services"
   },
   {
     icon: 'safeservice',
     value: '安保服务',
-    enValue: "Environmental services"
+    enValue: "Security Services （SS）"
   },
   {
     icon: 'center',
-    value: '客户服务中心',
-    enValue: "Environmental services"
+    value: '客服中心',
+    enValue: "Customer Service Center(CSC)"
   },
 ];
 export const newsList = [
   {
     icon: 'tree',
-    value: '宁波市收到回复 i 水电费和 i 水电费和 i 水电费和 i 水电费红薯淀粉和 i 水电费回来水电费',
-    more: '查看更多'
-  },
-  {
-    icon: 'transform',
-    value: '宁波市收到回复 i 水电费和 i 水电费和 i 水电费和 i 水电费红薯淀粉和 i 水电费回来水电费',
-    more: '查看更多'
-  },
-  {
-    icon: 'profix',
-    value: '宁波市收到回复 i 水电费和 i 水电费和 i 水电费和 i 水电费红薯淀粉和 i 水电费回来水电费',
-    more: '查看更多'
-  },
-  {
-    icon: 'elabrater',
-    value: '宁波市收到回复 i 水电费和 i 水电费和 i 水电费和 i 水电费红薯淀粉和 i 水电费回来水电费',
+    value: '文章链接',
     more: '查看更多'
   }
 ]
@@ -80,6 +65,11 @@ export const headerList = [
   {
     title: '新闻资讯',
     url: '/news',
+    useLine: true
+  },
+  {
+    title: '员工',
+    url: '/employees',
     useLine: false
   }
 ]

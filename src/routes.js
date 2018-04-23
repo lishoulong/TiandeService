@@ -6,6 +6,7 @@ import Service from './components/Service/Service';
 import Influence from './components/IndustryInflu/IndustryInflu';
 import News from './components/News/News';
 import NewTian from './components/NewTian/NewTian';
+import Employees from './components/Employees/Employees';
 
 const routes = (
     <Route>
@@ -15,6 +16,7 @@ const routes = (
                 <Route path="/influence" component={Influence}/>
                 <Route path="/news" component={News}/>
                 <Route path="/newTian" component={NewTian}/>
+                <Route path="/employees" component={Employees}/>
         </Route>
     </Route>
     );
