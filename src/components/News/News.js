@@ -36,7 +36,7 @@ render() {
                 tabPosition={'left'}
                 tabBarStyle={{background: '#ececec'}}
               >
-                <TabPane tab={<div><span>文章链接</span><span className="enNews">medical service</span></div>} key="1">
+                <TabPane tab={<div><span>文章链接</span><span className="enNews">paper link</span></div>} key="1">
                       {/* <div className="rightPart">
                         <span>专业的服务领导者，为全球医疗机构，教育结构，体育赛事提供设施管理服务。专业的服务领导者，为全球医疗机构，教育结构，体育赛事提供设施管理服务。专业的服务领导者，为全球医疗机构，教育结构，体育赛事提供设施管理服务。专业的服务领导者，</span>
                         <span>查看更多</span>

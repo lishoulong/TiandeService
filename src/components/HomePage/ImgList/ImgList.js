@@ -12,7 +12,7 @@ export default class ImgList extends React.Component {
     render(){
         return (
           <div className="container">
-            <Carousel axis="vertical" showThumbs={false} showArrows={false} dynamicHeight emulateTouch>
+            <Carousel axis="vertical" swipeable={true} showThumbs={false} showArrows={false} dynamicHeight emulateTouch>
                 <div>
                     <img src={require("../../img/homeBanner.jpg")} />
                 </div>
